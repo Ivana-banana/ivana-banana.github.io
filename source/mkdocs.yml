@@ -1,0 +1,51 @@
+# === Основная информация ===
+site_name: Лабораторные работы — Иван Пушкин
+site_description: Портфолио лабораторных работ по курсу программирования
+site_author: Иван Пушкин
+
+# === Тема Material ===
+theme:
+  name: material
+  language: ru
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: amber
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - toc.follow
+
+# === Навигация ===
+nav:
+  - Главная: index.md
+  - Об авторе: about.md
+  - Лабораторные работы:
+      - Лабораторная работа №1: labs/lab1.md
+      - Лабораторная работа №2: labs/lab2.md
+      - Лабораторная работа №3: labs/lab3.md
+      - Лабораторная работа №4: labs/lab4.md
+      - Лабораторная работа №5: labs/lab5.md
+
+# === Расширения Markdown ===
+markdown_extensions:
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - tables
+
+# === Дополнительные настройки ===
+extra:
+  copyright: © 2026 Иван Пушкин
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ivana-banana
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/dobryj_bobr
+
+# === Отключение поиска ===
+plugins:
+  - search:
+      enabled: false

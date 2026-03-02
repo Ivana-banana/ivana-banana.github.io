@@ -1,0 +1,85 @@
+# === ВИРТУАЛЬНЫЕ ОКРУЖЕНИЯ ===
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+*.venv/
+
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# === JUPYTER / NOTEBOOKS ===
+.ipynb_checkpoints/
+*.ipynb
+
+# === IDE — PyCharm ===
+.idea/
+*.iml
+*.iws
+*.ipr
+.project
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# === IDE — VS Code ===
+.vscode/
+*.code-workspace
+
+# === ФАЙЛЫ ОКРУЖЕНИЯ И СЕКРЕТЫ ===
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.crt
+*.log
+
+# === БАЗЫ ДАННЫХ И SQLITE ===
+*.db
+*.sqlite
+*.sqlite3
+db.sqlite3
+
+# === ОС-СПЕЦИФИЧНЫЕ ФАЙЛЫ ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# === СБОРКА И ДОКУМЕНТАЦИЯ ===
+*.mo
+*.pot
+*.potx
+doc/_build/
+site/
+public/
+mkdocs.yml.bak
+
+# === ДОПОЛНИТЕЛЬНО (по необходимости) ===
+# .vs/          # Visual Studio
+# *.swp         # Vim
+# *.swo         # Vim
