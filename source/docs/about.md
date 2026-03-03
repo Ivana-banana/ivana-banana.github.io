@@ -1,14 +1,19 @@
-# 👤 Об авторе
+# Об авторе
 
-## Иван Пушкин
-
-<center><img src="../images/img.png" alt="Иван Пушкин" width="200" style="border-radius: 50%;"></center>
-
-Студент направления **«Программная инженерия»**.
+<!-- Контейнер с аватаркой и именем -->
+<div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+    <img src="../images/img.png" alt="Иван Пушкин" width="140" style="border-radius: 8px; object-fit: cover; aspect-ratio: 4/5;">
+    <div>
+        <h2 style="margin: 0;">Иван Пушкин</h2>
+        <p style="margin: 4px 0 0 0; color: var(--md-default-fg-color--light);">
+           ФПИКТ ИСУ 501706
+        </p>
+    </div>
+</div>
 
 ---
 
-##  Образование
+## Образование
 
 | Период | Учебное заведение | Специальность |
 |--------|-------------------|---------------|
@@ -16,21 +21,28 @@
 
 ---
 
-##  Технологический стек
+## Технологический стек
 
 - **Языки**: Python, SQL
 - **Базы данных**: SQLite, PostgreSQL
-- **Инструменты**: Git, Docker, pytest, MkDocs
+- **Инструменты**: Git, pytest, MkDocs
 
 ---
 
-##  Контакты
+## Курсы и проекты
+
+| Проект / Курс                         | Период    | Технологии                 | Статус |
+|---------------------------------------|-----------|----------------------------|--------|
+| Основы программирования на Python     | 2022      | Python                     | ✅ Завершён |
+| Основы промышленного программирования | 2023      | Python, SQL                | ✅ Завершён |
+| [Сайт для контроля личных расходов](https://github.com/Ivana-banana/Hackathon) | 2025–2026 | Python, SQL                | ✅ Завершён |
+
+---
+
+## Контакты
 
 | Способ | Ссылка |
 |--------|--------|
 | :material-email: Email | [pushk1n.1van@yandex.ru](mailto:pushk1n.1van@yandex.ru) |
 | :fontawesome-brands-telegram: Telegram | [Ivan](https://t.me/dobryj_bobr) |
 | :fontawesome-brands-github: GitHub | [Ivan Banan](https://github.com/ivana-banana) |
-
----
-
