@@ -35,17 +35,16 @@ markdown_extensions:
       guess_lang: false
       linenums: true
   - tables
+  - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-# === Дополнительные настройки ===
-extra:
-  copyright: © 2026 Иван Пушкин
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/ivana-banana
-    - icon: fontawesome/brands/telegram
-      link: https://t.me/dobryj_bobr
 
 # === Отключение поиска ===
 plugins:
   - search:
       enabled: false
+
+extra:
+  copyright: ""
+  generator: false

@@ -2,36 +2,35 @@
 
 ## Иван Пушкин
 
-Студент направления «Прикладная информатика».
+<center><img src="../images/img.png" alt="Иван Пушкин" width="200" style="border-radius: 50%;"></center>
+
+Студент направления **«Программная инженерия»**.
 
 ---
 
-## 🎓 Образование
+##  Образование
 
 | Период | Учебное заведение | Специальность |
-|--------|------------------|---------------|
-| 2023–н.в. | Ваш ВУЗ | Прикладная информатика |
+|--------|-------------------|---------------|
+| 2025–н.в. | НИУ ИТМО | Программная инженерия |
 
 ---
 
-## 🛠 Технологический стек
+##  Технологический стек
 
-- 🐍 **Языки**: Python, SQL, JavaScript
-- 🗄️ **Базы данных**: SQLite, PostgreSQL
-- 🔧 **Инструменты**: Git, Docker, pytest, MkDocs
-- 📊 **Библиотеки**: Pandas, NumPy, Flask, PyQt5
+- **Языки**: Python, SQL
+- **Базы данных**: SQLite, PostgreSQL
+- **Инструменты**: Git, Docker, pytest, MkDocs
 
 ---
 
-## 📬 Контакты
+##  Контакты
 
 | Способ | Ссылка |
 |--------|--------|
-| 📧 Email | ivan.pushkin@example.com |
-| 💬 Telegram | [@ivana_banana](https://t.me/ivana_banana) |
-| 🐙 GitHub | [@ivana-banana](https://github.com/ivana-banana) |
+| :material-email: Email | [pushk1n.1van@yandex.ru](mailto:pushk1n.1van@yandex.ru) |
+| :fontawesome-brands-telegram: Telegram | [Ivan](https://t.me/dobryj_bobr) |
+| :fontawesome-brands-github: GitHub | [Ivan Banan](https://github.com/ivana-banana) |
 
 ---
 
-!!! note "Примечание"
-    Сайт находится в разработке. Предложения и замечания приветствуются!
