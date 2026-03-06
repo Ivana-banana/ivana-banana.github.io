@@ -411,21 +411,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Тема: Введение в Python
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 Цель работы
+        Тема: Создание сайта для лабораторных работ
       
     </span>
   </a>
@@ -436,7 +425,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 Задание
+        Цель работы
       
     </span>
   </a>
@@ -447,7 +436,29 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        💻 Исходный код
+        Задание
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Исходный код
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Выводы
       
     </span>
   </a>
@@ -609,21 +620,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Тема: Введение в Python
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 Цель работы
+        Тема: Создание сайта для лабораторных работ
       
     </span>
   </a>
@@ -634,7 +634,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 Задание
+        Цель работы
       
     </span>
   </a>
@@ -645,7 +645,29 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        💻 Исходный код
+        Задание
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Исходный код
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Выводы
       
     </span>
   </a>
@@ -670,73 +692,102 @@
 
 
 <h1 id="no1">Лабораторная работа №1</h1>
-<h2 id="python">Тема: Введение в Python</h2>
+<h2 id="_1">Тема: Создание сайта для лабораторных работ</h2>
 <hr />
-<h2 id="_1">🎯 Цель работы</h2>
-<p>Изучить базовые конструкции языка Python: переменные, типы данных, операторы ввода-вывода и условные конструкции.</p>
+<h2 id="_2">Цель работы</h2>
+<ul>
+<li>
+<p>Освоить процесс создания статического сайта с использованием генератора документации MkDocs.</p>
+</li>
+<li>
+<p>Научиться организовывать структуру документации проекта (портфолио лабораторных работ).</p>
+</li>
+<li>
+<p>Изучить базовые принципы работы с системой контроля версий Git и платформой GitHub.</p>
+</li>
+<li>
+<p>Развернуть статический сайт с использованием механизма GitHub Pages на домене вида username.github.io.</p>
+</li>
+<li>
+<p>Освоить базовую настройку темы оформления и конфигурационного файла mkdocs.yml.</p>
+</li>
+</ul>
 <hr />
-<h2 id="_2">📝 Задание</h2>
-<ol>
-<li>Разработать консольное приложение, которое:</li>
-<li>Запрашивает у пользователя имя и возраст</li>
-<li>Проверяет корректность введённых данных</li>
-<li>Выводит приветственное сообщение с учётом возраста</li>
-<li>Реализовать обработку исключений при вводе некорректных данных</li>
-<li>Добавить комментарии к коду</li>
-</ol>
+<h2 id="_3">Задание</h2>
+<ul>
+<li>
+<p>Создать публичный репозиторий на GitHub для размещения сайта-портфолио.</p>
+</li>
+<li>
+<p>Настроить GitHub Pages так, чтобы публикация осуществлялась из каталога /docs ветки main.</p>
+</li>
+</ul>
 <hr />
-<h2 id="_3">💻 Исходный код</h2>
-<p>```python title="main.py" linenums="1"</p>
-<h1 id="usrbinenv-python3">!/usr/bin/env python3</h1>
-<h1 id="-coding-utf-8-">-<em>- coding: utf-8 -</em>-</h1>
-<p>"""
-Лабораторная работа №1: Введение в Python
-Автор: Иван Пушкин
-Дата: 2026-03-03
-"""</p>
-<p>def get_user_input():
-    """Запрос и валидация данных пользователя"""
-    while True:
-        name = input("Введите ваше имя: ").strip()
-        if name:
-            break
-        print("❌ Имя не может быть пустым!")</p>
-<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>while True:
-    try:
-        age = int(input(&quot;Введите ваш возраст: &quot;))
-        if 0 &lt;= age &lt;= 120:
-            return name, age
-        print(&quot;❌ Возраст должен быть от 0 до 120!&quot;)
-    except ValueError:
-        print(&quot;❌ Введите корректное число!&quot;)
-</code></pre></div></td></tr></table></div>
+<h2 id="_4">Исходный код</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># === Основная информация ===</span>
+<span class="n">site_name</span><span class="p">:</span><span class="w"> </span><span class="err">Лабораторные</span><span class="w"> </span><span class="err">работы</span><span class="w"> </span><span class="err">—</span><span class="w"> </span><span class="err">Иван</span><span class="w"> </span><span class="err">Пушкин</span>
+<span class="n">site_description</span><span class="p">:</span><span class="w"> </span><span class="err">Портфолио</span><span class="w"> </span><span class="err">лабораторных</span><span class="w"> </span><span class="err">работ</span><span class="w"> </span><span class="err">по</span><span class="w"> </span><span class="err">курсу</span><span class="w"> </span><span class="err">программирования</span>
+<span class="n">site_author</span><span class="p">:</span><span class="w"> </span><span class="err">Иван</span><span class="w"> </span><span class="err">Пушкин</span>
 
-<p>def main():
-    """Основная функция программы"""
-    print("👋 Добро пожаловать!")
-    name, age = get_user_input()</p>
-<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>if age &lt; 18:
-    print(f&quot;Привет, {name}! Вам {age} лет.&quot;)
-elif age &lt; 60:
-    print(f&quot;Здравствуйте, {name}! Вам {age} лет.&quot;)
-else:
-    print(f&quot;Уважаемый {name}, вам {age} лет!&quot;)
-</code></pre></div></td></tr></table></div>
+<span class="c1"># === Тема Material ===</span>
+<span class="n">theme</span><span class="p">:</span>
+<span class="w">  </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="n">material</span>
+<span class="w">  </span><span class="n">language</span><span class="p">:</span><span class="w"> </span><span class="n">ru</span>
+<span class="w">  </span><span class="n">palette</span><span class="p">:</span>
+<span class="w">    </span><span class="n">scheme</span><span class="p">:</span><span class="w"> </span><span class="n">slate</span>
+<span class="w">    </span><span class="n">primary</span><span class="p">:</span><span class="w"> </span><span class="n">indigo</span>
+<span class="w">    </span><span class="n">accent</span><span class="p">:</span><span class="w"> </span><span class="n">amber</span>
+<span class="w">  </span><span class="n">features</span><span class="p">:</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">navigation</span><span class="o">.</span><span class="n">tabs</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">navigation</span><span class="o">.</span><span class="n">sections</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">navigation</span><span class="o">.</span><span class="n">top</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">content</span><span class="o">.</span><span class="n">code</span><span class="o">.</span><span class="n">copy</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">toc</span><span class="o">.</span><span class="n">follow</span>
 
-<p>if <strong>name</strong> == "<strong>main</strong>":
-    main()</p>
+<span class="c1"># === Навигация ===</span>
+<span class="n">nav</span><span class="p">:</span>
+<span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="err">Главная</span><span class="p">:</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">md</span>
+<span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="err">Об</span><span class="w"> </span><span class="err">авторе</span><span class="p">:</span><span class="w"> </span><span class="n">about</span><span class="o">.</span><span class="n">md</span>
+<span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="err">Лабораторные</span><span class="w"> </span><span class="err">работы</span><span class="p">:</span>
+<span class="w">      </span><span class="o">-</span><span class="w"> </span><span class="err">Лабораторная</span><span class="w"> </span><span class="err">работа</span><span class="w"> </span><span class="err">№</span><span class="mi">1</span><span class="p">:</span><span class="w"> </span><span class="n">labs</span><span class="o">/</span><span class="n">lab1</span><span class="o">.</span><span class="n">md</span>
+<span class="w">      </span><span class="o">-</span><span class="w"> </span><span class="err">Лабораторная</span><span class="w"> </span><span class="err">работа</span><span class="w"> </span><span class="err">№</span><span class="mi">2</span><span class="p">:</span><span class="w"> </span><span class="n">labs</span><span class="o">/</span><span class="n">lab2</span><span class="o">.</span><span class="n">md</span>
+<span class="w">      </span><span class="o">-</span><span class="w"> </span><span class="err">Лабораторная</span><span class="w"> </span><span class="err">работа</span><span class="w"> </span><span class="err">№</span><span class="mi">3</span><span class="p">:</span><span class="w"> </span><span class="n">labs</span><span class="o">/</span><span class="n">lab3</span><span class="o">.</span><span class="n">md</span>
+<span class="w">      </span><span class="o">-</span><span class="w"> </span><span class="err">Лабораторная</span><span class="w"> </span><span class="err">работа</span><span class="w"> </span><span class="err">№</span><span class="mi">4</span><span class="p">:</span><span class="w"> </span><span class="n">labs</span><span class="o">/</span><span class="n">lab4</span><span class="o">.</span><span class="n">md</span>
+<span class="w">      </span><span class="o">-</span><span class="w"> </span><span class="err">Лабораторная</span><span class="w"> </span><span class="err">работа</span><span class="w"> </span><span class="err">№</span><span class="mi">5</span><span class="p">:</span><span class="w"> </span><span class="n">labs</span><span class="o">/</span><span class="n">lab5</span><span class="o">.</span><span class="n">md</span>
+
+<span class="c1"># === Расширения Markdown ===</span>
+<span class="n">markdown_extensions</span><span class="p">:</span>
+<span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="n">codehilite</span><span class="p">:</span>
+<span class="w">      </span><span class="n">guess_lang</span><span class="p">:</span><span class="w"> </span><span class="bp">false</span>
+<span class="w">      </span><span class="n">linenums</span><span class="p">:</span><span class="w"> </span><span class="bp">false</span>
+<span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="n">tables</span>
+<span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="n">pymdownx</span><span class="o">.</span><span class="n">emoji</span><span class="p">:</span>
+<span class="w">      </span><span class="n">emoji_index</span><span class="p">:</span><span class="w"> </span><span class="o">!!</span><span class="n">python</span><span class="o">/</span><span class="n">name</span><span class="p">:</span><span class="n">material</span><span class="o">.</span><span class="n">extensions</span><span class="o">.</span><span class="n">emoji</span><span class="o">.</span><span class="n">twemoji</span>
+<span class="w">      </span><span class="n">emoji_generator</span><span class="p">:</span><span class="w"> </span><span class="o">!!</span><span class="n">python</span><span class="o">/</span><span class="n">name</span><span class="p">:</span><span class="n">material</span><span class="o">.</span><span class="n">extensions</span><span class="o">.</span><span class="n">emoji</span><span class="o">.</span><span class="n">to_svg</span>
+
+<span class="c1"># === Отключение поиска ===</span>
+<span class="n">plugins</span><span class="p">:</span>
+<span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="n">search</span><span class="p">:</span>
+<span class="w">      </span><span class="n">enabled</span><span class="p">:</span><span class="w"> </span><span class="bp">false</span>
+
+<span class="n">extra</span><span class="p">:</span>
+<span class="w">  </span><span class="n">copyright</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="w">  </span><span class="n">generator</span><span class="p">:</span><span class="w"> </span><span class="bp">false</span><span class="w"> </span>
+</code></pre></div>
+
+<hr />
+<h2 id="_5">Выводы</h2>
+<ul>
+<li>
+<p>Для реализации сайта выбрана тема "Materials" как максимально нейтральная</p>
+</li>
+<li>
+<p>Статический сайт с использованием GitHub Pages развёрнут</p>
+</li>
+<li>
+<p>Освоена базовая настройка темы оформления и конфигурационного файла mkdocs.yml</p>
+</li>
+</ul>
 
 
 
