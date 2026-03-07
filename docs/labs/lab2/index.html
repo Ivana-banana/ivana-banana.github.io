@@ -439,10 +439,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#numpy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Тема:
+        Тема: Основы NumPy: массивы и векторные операции
       
     </span>
   </a>
@@ -450,7 +450,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         Цель работы
@@ -461,10 +461,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Задание
+        Реализация
       
     </span>
   </a>
@@ -472,7 +472,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         Исходный код
@@ -609,10 +609,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#numpy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Тема:
+        Тема: Основы NumPy: массивы и векторные операции
       
     </span>
   </a>
@@ -620,7 +620,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         Цель работы
@@ -631,10 +631,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Задание
+        Реализация
       
     </span>
   </a>
@@ -642,7 +642,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         Исходный код
@@ -670,14 +670,287 @@
 
 
 <h1 id="no2">Лабораторная работа №2</h1>
-<h2 id="_1">Тема:</h2>
+<h2 id="numpy">Тема: Основы NumPy: массивы и векторные операции</h2>
 <hr />
-<h2 id="_2">Цель работы</h2>
+<h2 id="_1">Цель работы</h2>
+<ul>
+<li>
+<p>Ознакомиться с основными инструментами библиотек: numpy, matplotlib, seaborn</p>
+</li>
+<li>
+<p>Написать собственные функции для работы с векторами/матрицами</p>
+</li>
+<li>
+<p>Научиться строить простейшие диаграммы</p>
+</li>
+</ul>
 <hr />
-<h2 id="_3">Задание</h2>
+<h2 id="_2">Реализация</h2>
+<ul>
+<li>
+<p>Задание было реализовано в виде набора функций под каждую из поставленных задач</p>
+</li>
+<li>
+<p>Изображения диаграмм, которые строят функции, сохраняются в папку plots: line - линейная диаграмма,
+heatmap - тепловая карта, histogram - гистограмма</p>
+</li>
+<li>
+<p>Для каждой функции написана краткая документация и аннотация, код соответствует формату PEP8</p>
+</li>
+</ul>
 <hr />
-<h2 id="_4">Исходный код</h2>
-<p>```python title="main.py" linenums="1"</p>
+<h2 id="_3">Исходный код</h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">create_vector</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Создает одномерный массив из 10 элементов</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Массив чисел от 0 до 9</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="kp">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">create_matrix</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Создает матрицу 5x5 со случайными значениями от 0 до 1</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Матрица размером 5x5</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">reshape_vector</span><span class="p">(</span><span class="n">vec</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Изменяет форму вектора на матрицу 2x5</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        vec (np.ndarray): Исходный одномерный массив</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Массив формой 2x5</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">vec</span><span class="o">.</span><span class="kp">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">transpose_matrix</span><span class="p">(</span><span class="kp">mat</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Транспонирует матрицу</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        mat (np.ndarray): Исходная матрица</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Транспонированная матрица</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="kp">transpose</span><span class="p">(</span><span class="kp">mat</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">vector_add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Выполняет поэлементное сложение двух векторов</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        a (np.ndarray): Первый вектор</span>
+<span class="sd">        b (np.ndarray): Второй вектор</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Результат сложения</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">scalar_multiply</span><span class="p">(</span><span class="n">vec</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">scalar</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Умножает вектор на скаляр</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        vec (np.ndarray): Исходный вектор</span>
+<span class="sd">        scalar (float): Скалярное значение</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Результат умножения</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">vec</span> <span class="o">*</span> <span class="n">scalar</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">elementwise_multiply</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Выполняет поэлементное умножение двух массивов</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        a (np.ndarray): Первый массив</span>
+<span class="sd">        b (np.ndarray): Второй массив</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Результат поэлементного умножения</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">dot_product</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Вычисляет скалярное произведение двух векторов</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        a (np.ndarray): Первый вектор</span>
+<span class="sd">        b (np.ndarray): Второй вектор</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        float: Скалярное произведение</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="kp">dot</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">matrix_multiply</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Выполняет матричное умножение</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        a (np.ndarray): Первая матрица</span>
+<span class="sd">        b (np.ndarray): Вторая матрица</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Результат матричного умножения</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">matrix_determinant</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Вычисляет определитель матрицы</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        a (np.ndarray): Квадратная матрица</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        float: Определитель матрицы</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">matrix_inverse</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Вычисляет обратную матрицу</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        a (np.ndarray): Квадратная матрица</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Обратная матрица</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="kp">inv</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">solve_linear_system</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Решает систему линейных уравнений Ax = B</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        a (np.ndarray): Матрица коэффициентов</span>
+<span class="sd">        b (np.ndarray): Вектор правых частей</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Вектор решения</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="kp">solve</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">load_dataset</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;data/students_scores.csv&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Загружает датасет из CSV-файла и преобразует в NumPy-массив</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        path (str): Путь к CSV-файлу</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Массив данных</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">statistical_analysis</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">float</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Выполняет статистический анализ данных</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        data (np.ndarray): Массив данных для анализа</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict[str, float]: Словарь со статистическими метриками</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">&quot;mean&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">mean</span><span class="p">(</span><span class="n">data</span><span class="p">)),</span>
+        <span class="s2">&quot;median&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">median</span><span class="p">(</span><span class="n">data</span><span class="p">)),</span>
+        <span class="s2">&quot;std&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">std</span><span class="p">(</span><span class="n">data</span><span class="p">)),</span>
+        <span class="s2">&quot;min&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">min</span><span class="p">(</span><span class="n">data</span><span class="p">)),</span>
+        <span class="s2">&quot;max&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">max</span><span class="p">(</span><span class="n">data</span><span class="p">)),</span>
+        <span class="s2">&quot;percentile25&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">25</span><span class="p">)),</span>
+        <span class="s2">&quot;percentile75&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">75</span><span class="p">)),</span>
+    <span class="p">}</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">normalize_data</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Нормализует данные к диапазону [0, 1]</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        data (np.ndarray): Исходный массив данных</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        np.ndarray: Нормализованный массив</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">max</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">min</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">([(</span><span class="nb">float</span><span class="p">(</span><span class="n">elem</span><span class="p">)</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span> <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">data</span><span class="p">])</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">plot_histogram</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Строит и сохраняет гистограмму распределения данных</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        data (np.ndarray): Массив данных для визуализации</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Значения&quot;</span><span class="p">)</span> <span class="c1"># Подпись горизонтальной оси</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Частота&quot;</span><span class="p">)</span> <span class="c1"># Подпись вертикальной оси</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Распределение данных&quot;</span><span class="p">)</span> <span class="c1"># Установка заголовка</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;plots/histogram.png&quot;</span><span class="p">)</span> <span class="c1"># Сохранение картинки</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">plot_heatmap</span><span class="p">(</span><span class="kp">matrix</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Строит и сохраняет тепловую карту матрицы</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        matrix (np.ndarray): Матрица для визуализации</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="kp">matrix</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Тепловая карта данных&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;plots/heatmap.png&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">plot_line</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Строит и сохраняет линейный график</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        x (np.ndarray): Значения по оси X</span>
+<span class="sd">        y (np.ndarray): Значения по оси Y</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Номер студента&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Оценки&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Распределение оценок&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;plots/line.png&quot;</span><span class="p">)</span>
+</code></pre></div>
 
 
 
