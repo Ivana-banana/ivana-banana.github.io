@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main  # или другая основная ветка
-  # workflow_dispatch:  # ручная активация через интерфейс GitHub
+  workflow_dispatch:  # ручная активация через интерфейс GitHub
 
 jobs:
   build:
@@ -18,5 +18,5 @@ jobs:
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REQUIREMENTS: requirements.txt
           CONFIG_FILE: source/mkdocs.yml
+          REQUIREMENTS: requirements.txt
