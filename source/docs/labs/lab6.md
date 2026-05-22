@@ -231,4 +231,4 @@ IQR-метод: Q1 = 7.91, Q3 = 31.0, IQR = 23.09, верхняя граница
 
 ---
 
-**Ссылка на ноутбук:** [Открыть в Google Colab](https://colab.research.google.com/drive/1CvJi8jzZl3mlEcQdJAr1xHeUsm3gfQF0)
+**Ссылка на ноутбук:** [Открыть в Google Colab](https://colab.research.google.com/drive/1CvJi8jzZl3mlEcQdJAr1xHeUsm3gfQF0?usp=sharing)
