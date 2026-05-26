@@ -1,0 +1,1520 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Портфолио лабораторных работ по курсу программирования">
+      
+      
+        <meta name="author" content="Иван Пушкин">
+      
+      
+      
+        <link rel="prev" href="../lab5/">
+      
+      
+        <link rel="next" href="../lab7/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Лабораторная работа №6 - Лабораторные работы — Иван Пушкин</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#no6" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.." title="Лабораторные работы — Иван Пушкин" class="md-header__button md-logo" aria-label="Лабораторные работы — Иван Пушкин" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Лабораторные работы — Иван Пушкин
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Лабораторная работа №6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Главная
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  Об авторе
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../lab1/" class="md-tabs__link">
+          
+  
+  Лабораторные работы
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Лабораторные работы — Иван Пушкин" class="md-nav__button md-logo" aria-label="Лабораторные работы — Иван Пушкин" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Лабораторные работы — Иван Пушкин
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Главная
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Об авторе
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Лабораторные работы
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Лабораторные работы
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа №1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа №2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа №3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа №4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа №5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Лабораторная работа №6
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа №6
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pandas-p3123" class="md-nav__link">
+    <span class="md-ellipsis">
+      Очистка и трансформация данных. pandas (P3123)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Введение
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Цель работы
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Теоретические сведения
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Описание набора данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Первичный анализ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Первичный анализ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Статистика датафрейма
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Визуализация пропусков
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Гистограммы распределения числовых признаков
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Обработка пропусков
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Обработка пропусков">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Методы заполнения
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Результаты обработки
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Трансформация данных
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Трансформация данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Созданные признаки
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Преобразования типов
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Распределение числовых признаков после трансформации
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Обработка выбросов
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Обработка выбросов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Выявленные выбросы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Методы обработки
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Агрегация и анализ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Агрегация и анализ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сводные статистики
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Визуализации выживаемости по новым признакам
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Метрики качества очистки данных
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Метрики качества очистки данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Корреляция Пирсона (числовые признаки)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cramers-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cramer's V (категориальные признаки)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Заключение
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Заключение">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Результаты работы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Выводы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа №7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа №8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pandas-p3123" class="md-nav__link">
+    <span class="md-ellipsis">
+      Очистка и трансформация данных. pandas (P3123)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Введение
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Цель работы
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Теоретические сведения
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Описание набора данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Первичный анализ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Первичный анализ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Статистика датафрейма
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Визуализация пропусков
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Гистограммы распределения числовых признаков
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Обработка пропусков
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Обработка пропусков">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Методы заполнения
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Результаты обработки
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Трансформация данных
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Трансформация данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Созданные признаки
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Преобразования типов
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Распределение числовых признаков после трансформации
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Обработка выбросов
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Обработка выбросов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Выявленные выбросы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Методы обработки
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Агрегация и анализ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Агрегация и анализ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сводные статистики
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Визуализации выживаемости по новым признакам
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Метрики качества очистки данных
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Метрики качества очистки данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Корреляция Пирсона (числовые признаки)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cramers-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cramer's V (категориальные признаки)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Заключение
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Заключение">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Результаты работы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Выводы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="no6">Лабораторная работа №6</h1>
+<h2 id="pandas-p3123">Очистка и трансформация данных. pandas (P3123)</h2>
+<p><strong>Выполнил:</strong> Пушкин Иван Алексеевич, группа P3123</p>
+<hr />
+<h2 id="1">1. Введение</h2>
+<p>Данная лабораторная работа посвящена изучению методов очистки и трансформации данных с использованием библиотеки pandas на примере реального датасета Titanic с платформы Kaggle.</p>
+<hr />
+<h2 id="2">2. Цель работы</h2>
+<p>Освоение методов очистки и трансформации данных с использованием библиотеки pandas на примере реальных данных из Kaggle.</p>
+<hr />
+<h2 id="3">3. Теоретические сведения</h2>
+<p>Основные понятия:</p>
+<ul>
+<li><strong>Предобработка данных</strong> — подготовка данных к анализу</li>
+<li><strong>Очистка данных</strong> — устранение ошибок и пропусков</li>
+<li><strong>Трансформация данных</strong> — преобразование данных для анализа</li>
+<li><strong>Pandas</strong> — библиотека для работы с данными в Python</li>
+</ul>
+<hr />
+<h2 id="4">4. Описание набора данных</h2>
+<p><strong>Dataset:</strong> Titanic (<a href="https://www.kaggle.com/c/titanic/data">https://www.kaggle.com/c/titanic/data</a>)</p>
+<table>
+<thead>
+<tr>
+<th>Признак</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PassengerId</td>
+<td>Идентификатор пассажира</td>
+</tr>
+<tr>
+<td>Survived</td>
+<td>Выжил ли пассажир (0 = нет; 1 = да)</td>
+</tr>
+<tr>
+<td>Pclass</td>
+<td>Класс билета</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>Имя</td>
+</tr>
+<tr>
+<td>Sex</td>
+<td>Пол</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>Возраст</td>
+</tr>
+<tr>
+<td>SibSp</td>
+<td>Количество братьев/сестёр/супругов на борту</td>
+</tr>
+<tr>
+<td>Parch</td>
+<td>Количество родителей/детей на борту</td>
+</tr>
+<tr>
+<td>Ticket</td>
+<td>Номер билета</td>
+</tr>
+<tr>
+<td>Fare</td>
+<td>Стоимость билета</td>
+</tr>
+<tr>
+<td>Cabin</td>
+<td>Номер каюты</td>
+</tr>
+<tr>
+<td>Embarked</td>
+<td>Порт посадки</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5">5. Первичный анализ</h2>
+<h3 id="_1">Статистика датафрейма</h3>
+<p>После загрузки данных были выведены первые 10 строк, типы данных и статистические характеристики числовых признаков (<code>train.describe()</code>).</p>
+<p>Основные наблюдения:
+- Всего <strong>891 пассажир</strong> и <strong>12 признаков</strong>
+- Числовые типы: <code>int64</code> и <code>float64</code>
+- Строковые типы: <code>object</code></p>
+<h3 id="_2">Визуализация пропусков</h3>
+<p>Выявленные пропуски:</p>
+<table>
+<thead>
+<tr>
+<th>Столбец</th>
+<th>Количество пропусков</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Age</td>
+<td>177</td>
+</tr>
+<tr>
+<td>Cabin</td>
+<td>687</td>
+</tr>
+<tr>
+<td>Embarked</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">Гистограммы распределения числовых признаков</h3>
+<p><img alt="Гистограммы распределения" src="../img/hist_all.png" /></p>
+<hr />
+<h2 id="6">6. Обработка пропусков</h2>
+<h3 id="_4">Методы заполнения</h3>
+<p><strong>Age:</strong> среднее значение — ~29.7, медиана — 28.0. Пропуски заполнены <strong>медианой</strong>, так как она устойчива к выбросам.</p>
+<p><strong>Embarked:</strong> наиболее часто встречающееся значение — <code>S</code> (Southampton). Два пропуска заполнены <strong>модой</strong>.</p>
+<p><strong>Cabin:</strong> столбец содержит ~77% пропусков. Из первой буквы каюты создан новый признак <code>Cabin_deck</code> (палуба). Пассажирам без каюты присвоено значение <code>U</code> (Unknown). Исходный столбец удалён.</p>
+<h3 id="_5">Результаты обработки</h3>
+<p>После обработки пропусков в датасете не осталось ни одного пустого значения.</p>
+<hr />
+<h2 id="7">7. Трансформация данных</h2>
+<h3 id="_6">Созданные признаки</h3>
+<table>
+<thead>
+<tr>
+<th>Признак</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Age_group</td>
+<td>Возрастная группа: Child / Teenager / Youth / Adult / Senior</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Обращение из имени: Mr, Mrs, Miss и т.д.</td>
+</tr>
+<tr>
+<td>FamilySize</td>
+<td>Размер семьи = SibSp + Parch + 1</td>
+</tr>
+<tr>
+<td>IsAlone</td>
+<td>1 — путешествует один, 0 — с семьёй</td>
+</tr>
+<tr>
+<td>Cabin_deck</td>
+<td>Палуба из первой буквы каюты</td>
+</tr>
+</tbody>
+</table>
+<p>Возрастные группы:
+- 0–12: Child
+- 13–17: Teenager
+- 18–25: Youth
+- 26–64: Adult
+- 65+: Senior</p>
+<h3 id="_7">Преобразования типов</h3>
+<ul>
+<li><code>Pclass</code>: числовой → строковый (1→F, 2→S, 3→T)</li>
+<li><code>Sex</code>: строковый → числовой (male→0, female→1)</li>
+<li><code>Title</code>: извлечён из <code>Name</code> с помощью регулярного выражения</li>
+</ul>
+<h3 id="_8">Распределение числовых признаков после трансформации</h3>
+<p><img alt="Распределение числовых признаков" src="../img/dist_numeric.png" /></p>
+<hr />
+<h2 id="8">8. Обработка выбросов</h2>
+<h3 id="_9">Выявленные выбросы</h3>
+<p>Для признака <code>Fare</code> построен boxplot. С помощью IQR-метода выявлено значительное количество выбросов — некоторые пассажиры первого класса платили до 512$.</p>
+<p>IQR-метод: Q1 = 7.91, Q3 = 31.0, IQR = 23.09, верхняя граница = 65.6</p>
+<p><strong>Boxplot для Fare до обработки:</strong></p>
+<p><img alt="Boxplot Fare до" src="../img/boxplot_before.png" /></p>
+<p><strong>Распределение Age до обработки:</strong></p>
+<p><img alt="Age до" src="../img/age_dist_before.png" /></p>
+<h3 id="_10">Методы обработки</h3>
+<ul>
+<li><strong>Winsorization для Fare:</strong> обрезка до 5-го и 95-го перцентиля</li>
+<li><strong>Clip для Age:</strong> значения выше 95-го перцентиля заменены на граничное значение</li>
+</ul>
+<p><strong>Boxplot для Fare после обработки:</strong></p>
+<p><img alt="Boxplot Fare после" src="../img/boxplot_after.png" /></p>
+<p><strong>Распределение Age после обработки:</strong></p>
+<p><img alt="Age после" src="../img/age_dist_after.png" /></p>
+<p>После обработки распределения стали значительно равномернее, экстремальные значения устранены.</p>
+<hr />
+<h2 id="9">9. Агрегация и анализ</h2>
+<h3 id="_11">Сводные статистики</h3>
+<p><strong>Среднее выживание по классам:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Класс</th>
+<th>Доля выживших</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F (1-й)</td>
+<td>~0.63</td>
+</tr>
+<tr>
+<td>S (2-й)</td>
+<td>~0.47</td>
+</tr>
+<tr>
+<td>T (3-й)</td>
+<td>~0.24</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Медианный возраст по портам посадки:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Порт</th>
+<th>Медианный возраст</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C (Cherbourg)</td>
+<td>~30</td>
+</tr>
+<tr>
+<td>Q (Queenstown)</td>
+<td>~22</td>
+</tr>
+<tr>
+<td>S (Southampton)</td>
+<td>~28</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_12">Визуализации выживаемости по новым признакам</h3>
+<p><img alt="Heatmap выживаемости" src="../img/heatmap_survival.png" /></p>
+<p>Основные наблюдения:
+- <strong>Age_group:</strong> дети (0.58) выживали чаще взрослых и пожилых (0.09)
+- <strong>Title:</strong> женские обращения (Miss — 0.70, Mrs — 0.79, Lady/Ms/Mme — 1.0) показали высокую выживаемость; Mr — лишь 0.16
+- <strong>FamilySize:</strong> семьи из 2–4 человек выживали чаще одиночек (0.30) и больших семей
+- <strong>IsAlone:</strong> одиночки (0.30) выживали реже тех, кто был с семьёй (0.51)</p>
+<hr />
+<h2 id="10">10. Метрики качества очистки данных</h2>
+<ul>
+<li><strong>Процент заполненных значений:</strong> 100% по всем столбцам после обработки</li>
+<li><strong>Уникальные значения в категориальных признаках:</strong> Age_group — 5, Title — 17, Pclass — 3, Embarked — 3, Cabin_deck — 9</li>
+</ul>
+<h3 id="_13">Корреляция Пирсона (числовые признаки)</h3>
+<p><img alt="Корреляция Пирсона" src="../img/corr_pearson.png" /></p>
+<p>Сильные связи:
+- <code>SibSp</code> и <code>FamilySize</code> (r = 0.89) — братья/сёстры входят в размер семьи
+- <code>Parch</code> и <code>FamilySize</code> (r = 0.78) — аналогично для родителей/детей
+- <code>Fare</code> и <code>Survived</code> (r = 0.31) — более дорогие билеты связаны с выживаемостью</p>
+<h3 id="cramers-v">Cramer's V (категориальные признаки)</h3>
+<p><img alt="Cramer's V" src="../img/corr_cramers.png" /></p>
+<p>Сильные связи:
+- <code>Title</code> и <code>Sex</code> (V = 1.0) — обращение полностью определяется полом
+- <code>Pclass</code> и <code>Cabin_deck</code> (V = 0.61) — класс билета определяет палубу
+- <code>Age_group</code> и <code>Title</code> (V = 0.41) — возрастная группа связана с обращением</p>
+<hr />
+<h2 id="11">11. Заключение</h2>
+<h3 id="_14">Результаты работы</h3>
+<p>В ходе лабораторной работы проведён полный цикл предобработки данных:
+- Загружен датасет Titanic (891 пассажир, 12 признаков)
+- Заполнены пропуски в Age и Embarked; из Cabin создан признак Cabin_deck
+- Создано 5 новых признаков: Age_group, Title, FamilySize, IsAlone, Cabin_deck
+- Обработаны выбросы в Fare и Age методом winsorization
+- Проведена агрегация и построены сводные таблицы выживаемости
+- Вычислены корреляции Пирсона и Cramer's V</p>
+<h3 id="_15">Выводы</h3>
+<p>Наибольшее влияние на выживаемость оказывали пол, класс билета и размер семьи. Женщины и пассажиры первого класса выживали значительно чаще. Пассажиры, путешествовавшие в одиночку, выживали реже тех, кто был с семьёй среднего размера (2–4 человека). Высокая корреляция между SibSp/Parch и FamilySize подтверждает, что новый признак успешно объединяет информацию о родственниках на борту.</p>
+<hr />
+<p><strong>Ссылка на ноутбук:</strong> <a href="https://colab.research.google.com/drive/1CvJi8jzZl3mlEcQdJAr1xHeUsm3gfQF0?usp=sharing">Открыть в Google Colab</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
