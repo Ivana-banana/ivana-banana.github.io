@@ -1,5 +1,6 @@
 # === Основная информация ===
 site_name: Иван Пушкин
+site_url: https://ivana-banana.github.io/
 site_description: Сайт-визитка Ивана Пушкина — достижения, хакатоны и лабораторные работы по курсу программирования
 site_author: Иван Пушкин
 copyright: © 2026 Иван Пушкин · сделано на бананах
@@ -78,3 +79,16 @@ plugins:
 
 extra:
   generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Ivana-banana
+      name: GitHub
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/dobryj_bobr
+      name: Telegram
+    - icon: material/email
+      link: mailto:pushk1n.1van@yandex.ru
+      name: Email
+    - icon: material/account-group
+      link: https://nedovost.org
+      name: Команда «недовосторг»
