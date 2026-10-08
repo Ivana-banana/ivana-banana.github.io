@@ -1,20 +1,37 @@
 # === Основная информация ===
-site_name: Лабораторные работы — Иван Пушкин
-site_description: Портфолио лабораторных работ по курсу программирования
+site_name: Иван Пушкин
+site_description: Сайт-визитка Ивана Пушкина — достижения, хакатоны и лабораторные работы по курсу программирования
 site_author: Иван Пушкин
+copyright: © 2026 Иван Пушкин · сделано на бананах
 
 # === Тема Material ===
 theme:
   name: material
   language: ru
+  logo: images/banana.svg
+  favicon: images/banana.svg
+  font:
+    text: Manrope
+    code: JetBrains Mono
   palette:
-    scheme: slate
-    primary: indigo
-    accent: amber
+    # Первая схема — по умолчанию: тёмная. Светлая — по переключателю
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.footer
     - content.code.copy
     - toc.follow
 
@@ -23,21 +40,32 @@ nav:
   - Главная: index.md
   - Об авторе: about.md
   - Лабораторные работы:
-      - Лабораторная работа №1: labs/lab1.md
-      - Лабораторная работа №2: labs/lab2.md
-      - Лабораторная работа №3: labs/lab3.md
-      - Лабораторная работа №4: labs/lab4.md
-      - Лабораторная работа №5: labs/lab5.md
-      - Лабораторная работа №6: labs/lab6.md
-      - Лабораторная работа №7: labs/lab7.md
-      - Лабораторная работа №8: labs/lab8.md
+      - №1 · Сайт на MkDocs: labs/lab1.md
+      - №2 · NumPy: labs/lab2.md
+      - №3: labs/lab3.md
+      - №4 · Классификация: labs/lab4.md
+      - №5 · Регрессия: labs/lab5.md
+      - №6 · Очистка данных: labs/lab6.md
+      - №7 · Анализ текста: labs/lab7.md
+      - №8 · Скрапинг: labs/lab8.md
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/bananas.js
 
 # === Расширения Markdown ===
 markdown_extensions:
-  - codehilite:
-      guess_lang: true
-      linenums: false
   - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
   - pymdownx.emoji:
         emoji_index: !!python/name:material.extensions.emoji.twemoji
         emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -49,5 +77,4 @@ plugins:
       enabled: false
 
 extra:
-  copyright: ""
   generator: false
