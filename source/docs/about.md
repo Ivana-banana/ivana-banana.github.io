@@ -8,7 +8,7 @@ hide:
   <img src="../images/img.png" alt="Иван Пушкин">
   <div>
     <p class="eyebrow">Об авторе</p>
-    <h1>Иван Пушкин</h1>
+    <h1>Иван <span class="nick">«Банан»</span> Пушкин</h1>
     <p>Студент ФПИКТ НИУ ИТМО · ИСУ 501706</p>
     <p>Участник хакатон-команды <a href="https://nedovost.org">«недовосторг»</a></p>
   </div>

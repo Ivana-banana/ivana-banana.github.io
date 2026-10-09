@@ -8,7 +8,7 @@ hide:
 <div class="hero">
   <div class="hero__text">
     <p class="eyebrow">Портфолио · ИТМО · 2026</p>
-    <h1 class="hero__title">Иван<br><span>Пушкин</span></h1>
+    <h1 class="hero__title">Иван<br><span class="nick">«Банан»</span><br>Пушкин</h1>
     <p class="hero__lead">
       Студент программной инженерии <strong>НИУ ИТМО</strong>, пишу на Python.
       С июля 2026 года — <strong>8 хакатонов</strong> в команде

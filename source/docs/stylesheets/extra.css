@@ -413,11 +413,12 @@
   margin: 0.3em 0 0.4em;
 }
 
-.hero__title span {
+/* Прозвище в имени: Иван «Банан» Пушкин */
+.nick {
   color: var(--banana);
 }
 
-[data-md-color-scheme="default"] .hero__title span {
+[data-md-color-scheme="default"] .nick {
   color: inherit;
   background: linear-gradient(transparent 62%, var(--banana) 62%, var(--banana) 92%, transparent 92%);
 }
@@ -1006,6 +1007,10 @@
 }
 
 @media screen and (max-width: 44.9375em) {
+  .md-header__title {
+    font-size: 0.72rem;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     padding-top: 1rem;
