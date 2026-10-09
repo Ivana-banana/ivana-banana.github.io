@@ -3,31 +3,20 @@ name: Deploy MkDocs Site
 on:
   push:
     branches:
-      - main
+      - main  # или другая основная ветка
   workflow_dispatch:  # ручная активация через интерфейс GitHub
 
-permissions:
-  contents: write  # gh-deploy пушит собранный сайт в ветку gh-pages
-
 jobs:
-  deploy:
+  build:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: Checkout master
+        uses: actions/checkout@v1
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Build and deploy
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          mkdocs gh-deploy --force --strict -f source/mkdocs.yml
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONFIG_FILE: source/mkdocs.yml
+          REQUIREMENTS: requirements.txt

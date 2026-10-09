@@ -96,12 +96,11 @@ hide:
 
 ## Технологический стек
 
-<div class="chips"><span class="chip chip--label">Языки</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">C++</span></div>
-<div class="chips"><span class="chip chip--label">Данные и ML</span><span class="chip">NumPy</span><span class="chip">pandas</span><span class="chip">matplotlib</span><span class="chip">seaborn</span><span class="chip">scikit-learn</span></div>
+<div class="chips"><span class="chip chip--label">Языки</span><span class="chip">Python</span><span class="chip">SQL</span></div>
 <div class="chips"><span class="chip chip--label">Веб</span><span class="chip">Flask</span><span class="chip">Flask-RESTful</span><span class="chip">Jinja2</span><span class="chip">SQLAlchemy</span></div>
 <div class="chips"><span class="chip chip--label">Базы данных</span><span class="chip">SQLite</span><span class="chip">PostgreSQL</span></div>
-<div class="chips"><span class="chip chip--label">Робототехника</span><span class="chip">ROS 2</span><span class="chip">Gazebo</span></div>
-<div class="chips"><span class="chip chip--label">Инструменты</span><span class="chip">Git</span><span class="chip">GitHub Actions</span><span class="chip">Docker</span><span class="chip">pytest</span><span class="chip">MkDocs</span></div>
+<div class="chips"><span class="chip chip--label">Прочее</span><span class="chip">Pygame</span><span class="chip">NumPy</span></div>
+<div class="chips"><span class="chip chip--label">Инструменты</span><span class="chip">Git</span><span class="chip">GitHub Actions</span><span class="chip">pytest</span><span class="chip">MkDocs</span></div>
 
 ## Курсы и проекты
 
@@ -112,7 +111,7 @@ hide:
 | [Учебный веб-сервис с REST API](https://github.com/Ivana-banana/YandexQT) — Яндекс Лицей | 2024 | Flask, Flask-RESTful, SQLAlchemy |
 | [Веб-приложение на Flask](https://github.com/Ivana-banana/WebYandex) — проект Яндекс Лицея | 2024 | Flask, Flask-Login, SQLAlchemy |
 | [Основы промышленного программирования](https://lms.yandex.ru/certificate/check) (сертификат 2302170474) | 2024 | Python, SQL |
-| Сайт для контроля личных расходов — хакатон по Python | 2025–2026 | Python, SQL |
+| [Сайт для контроля личных расходов](https://github.com/Ivana-banana/Hackathon) | 2025–2026 | Python, SQL |
 
 ## Контакты
 

@@ -33,7 +33,7 @@ hide:
   <div class="stat"><span class="stat__value">III ×2</span><span class="stat__label">призовых места на хакатонах</span></div>
   <div class="stat"><span class="stat__value">300 000 ₽</span><span class="stat__label">призовых у команды</span></div>
   <div class="stat"><span class="stat__value">8</span><span class="stat__label">хакатонов с июля 2026</span></div>
-  <div class="stat"><span class="stat__value">7</span><span class="stat__label">отчётов по лабораторным</span></div>
+  <div class="stat"><span class="stat__value">8</span><span class="stat__label">лабораторных работ</span></div>
 </div>
 
 <div class="section-head" markdown>

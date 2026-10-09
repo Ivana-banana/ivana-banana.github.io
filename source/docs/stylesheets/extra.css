@@ -446,8 +446,6 @@
 .hero__photo {
   position: relative;
   width: 13rem;
-  /* место под смещённую жёлтую подложку, чтобы её не обрезало */
-  margin-right: 1rem;
 }
 
 .hero__photo::before {
@@ -1004,16 +1002,6 @@
 @media screen and (max-width: 76.1875em) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 59.9375em) {
-  .hero__photo {
-    width: 10.5rem;
-  }
-
-  .hero__bg-banana {
-    right: -1.5rem;
   }
 }
 
