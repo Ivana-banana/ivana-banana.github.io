@@ -19,7 +19,7 @@ hide:
 <div class="achievements">
   <div class="ach"><span class="ach__value">III ×2</span><span class="ach__title">Призовые места</span><span class="ach__desc">Хакатон Московского транспорта и КосмоХакатон 2026</span></div>
   <div class="ach"><span class="ach__value">300 000 ₽</span><span class="ach__title">Призовых у команды</span><span class="ach__desc">Призовой фонд команды «недовосторг» за 2026 год</span></div>
-  <div class="ach"><span class="ach__value">8</span><span class="ach__title">Хакатонов</span><span class="ach__desc">С июля по октябрь 2026, включая финал КосмоХакатона</span></div>
+  <div class="ach"><span class="ach__value">9</span><span class="ach__title">Хакатонов</span><span class="ach__desc">С июля по октябрь 2026, включая финалы КосмоХакатона и PostCode Challenge</span></div>
   <div class="ach"><span class="ach__value">2</span><span class="ach__title">Сертификата Яндекс Лицея</span><span class="ach__desc">Основы программирования на Python и промышленного программирования</span></div>
 </div>
 
@@ -55,6 +55,13 @@ hide:
     <a class="tl-title" href="https://nedovost.org/projects/fuel-contour-2035">Топливный космоконтур 2035</a>
     <div class="tl-desc">Пульт оператора орбитального топливного узла: помесячная модель материального баланса и MILP-оптимизатор плана.</div>
     <div class="tl-stack">Python · MILP · HiGHS</div>
+  </div>
+
+  <div class="tl-item tl-item--final">
+    <div class="tl-head"><span class="tl-date">16 сен — 8 окт 2026</span><span class="tl-event">PostCode Challenge от Почтатеха · финал</span><span class="badge badge--final">Финалисты</span></div>
+    <span class="tl-title">Цифровой двойник отделения Почты России</span>
+    <div class="tl-desc">Веб-редактор плана отделения: зоны и оборудование, инвентаризация, проверки планировки, объяснимые рекомендации и 3D-вид для руководителей.</div>
+    <div class="tl-stack">TypeScript · React · Konva · Three.js</div>
   </div>
 
   <div class="tl-item">

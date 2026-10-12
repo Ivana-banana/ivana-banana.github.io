@@ -11,12 +11,12 @@ hide:
     <h1 class="hero__title">Иван<br><span class="nick">«Банан»</span><br>Пушкин</h1>
     <p class="hero__lead">
       Студент программной инженерии <strong>НИУ ИТМО</strong>, пишу на Python.
-      С июля 2026 года — <strong>8 хакатонов</strong> в команде
+      С июля 2026 года — <strong>9 хакатонов</strong> в команде
       <a href="https://nedovost.org">«недовосторг»</a>, два из них — с призовым местом.
     </p>
     <div class="hero__actions">
       <a class="md-button md-button--primary" href="about/">Обо мне</a>
-      <a class="md-button" href="labs/lab1/">Лабораторные работы</a>
+      <a class="md-button" href="about/#hackathons">Хакатоны</a>
     </div>
   </div>
   <div class="hero__photo">
@@ -32,8 +32,8 @@ hide:
 <div class="stats">
   <div class="stat"><span class="stat__value">III ×2</span><span class="stat__label">призовых места на хакатонах</span></div>
   <div class="stat"><span class="stat__value">300 000 ₽</span><span class="stat__label">призовых у команды</span></div>
-  <div class="stat"><span class="stat__value">8</span><span class="stat__label">хакатонов с июля 2026</span></div>
-  <div class="stat"><span class="stat__value">8</span><span class="stat__label">лабораторных работ</span></div>
+  <div class="stat"><span class="stat__value">9</span><span class="stat__label">хакатонов с июля 2026</span></div>
+  <div class="stat"><span class="stat__value">2</span><span class="stat__label">финала: КосмоХакатон и Почтатех</span></div>
 </div>
 
 <div class="section-head" markdown>
@@ -61,21 +61,4 @@ hide:
     <span class="project__desc">Карта паводков по радарным снимкам Sentinel-1, оценка ущерба и план докупки снимков.</span>
     <span class="project__stack">PyTorch · React · MapLibre</span>
   </a>
-</div>
-
-<div class="section-head" markdown>
-## Лабораторные работы
-
-[Все отчёты →](labs/lab1.md)
-</div>
-
-<div class="labs">
-  <a class="lab" href="labs/lab1/"><span class="lab__num">01</span><span class="lab__title">Сайт на MkDocs и GitHub Pages</span><span class="lab__arrow">→</span></a>
-  <a class="lab" href="labs/lab2/"><span class="lab__num">02</span><span class="lab__title">Основы NumPy</span><span class="lab__arrow">→</span></a>
-  <a class="lab lab--empty" href="labs/lab3/"><span class="lab__num">03</span><span class="lab__title">Отчёт готовится</span><span class="lab__arrow">→</span></a>
-  <a class="lab" href="labs/lab4/"><span class="lab__num">04</span><span class="lab__title">Классификация в Scikit-Learn</span><span class="lab__arrow">→</span></a>
-  <a class="lab" href="labs/lab5/"><span class="lab__num">05</span><span class="lab__title">Регрессия в Scikit-Learn</span><span class="lab__arrow">→</span></a>
-  <a class="lab" href="labs/lab6/"><span class="lab__num">06</span><span class="lab__title">Очистка данных в pandas</span><span class="lab__arrow">→</span></a>
-  <a class="lab" href="labs/lab7/"><span class="lab__num">07</span><span class="lab__title">Анализ текста</span><span class="lab__arrow">→</span></a>
-  <a class="lab" href="labs/lab8/"><span class="lab__num">08</span><span class="lab__title">Скрапинг и анализ текста</span><span class="lab__arrow">→</span></a>
 </div>

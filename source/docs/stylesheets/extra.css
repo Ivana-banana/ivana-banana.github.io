@@ -587,65 +587,6 @@
 }
 
 /* ============================================================
-   Список лабораторных
-   ============================================================ */
-
-.labs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0 2rem;
-  margin-top: 0.8rem;
-}
-
-.md-typeset a.lab {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  padding: 0.85rem 0;
-  border-bottom: 1px solid var(--line);
-  color: var(--fg);
-  text-decoration: none;
-}
-
-.lab__num {
-  min-width: 2rem;
-  color: var(--muted);
-  font-family: var(--md-code-font-family);
-  font-size: 0.7rem;
-}
-
-.lab__title {
-  flex: 1;
-  font-weight: 600;
-}
-
-.lab__arrow {
-  color: var(--muted);
-  transition: transform 0.15s, color 0.15s;
-}
-
-.lab__arrow {
-  display: inline-block;
-  width: 1.2rem;
-  text-align: center;
-}
-
-.md-typeset a.lab:hover .lab__arrow {
-  color: transparent;
-  background: var(--banana-img) center / 1.2rem no-repeat;
-  transform: translateX(4px) rotate(-15deg);
-}
-
-.md-typeset a.lab:hover .lab__title {
-  color: var(--link);
-}
-
-.lab--empty .lab__title {
-  color: var(--muted);
-  font-weight: 500;
-}
-
-/* ============================================================
    Об авторе: шапка профиля, хронология, контакты
    ============================================================ */
 
@@ -747,6 +688,10 @@
 
 .md-typeset .tl-title:hover {
   color: var(--link);
+}
+
+.md-typeset span.tl-title:hover {
+  color: var(--fg);
 }
 
 .tl-desc {
@@ -1043,7 +988,6 @@
   }
 
   .projects,
-  .labs,
   .contacts {
     grid-template-columns: 1fr;
   }
