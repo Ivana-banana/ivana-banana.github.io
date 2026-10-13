@@ -708,6 +708,23 @@
   font-size: 0.6rem;
 }
 
+.md-typeset .tl-code {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-family: var(--md-code-font-family);
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.md-typeset h3.tl-group {
+  margin: 2rem 0 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;
