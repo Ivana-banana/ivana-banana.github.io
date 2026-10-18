@@ -17,10 +17,10 @@ hide:
 ## Достижения
 
 <div class="achievements">
-  <div class="ach"><span class="ach__value">I</span><span class="ach__title">Победители ML4Pay</span><span class="ach__desc">Хакатон Авито × ИТМО: предсказание возвратов в Авито Доставке</span></div>
+  <div class="ach"><span class="ach__value">I ×2</span><span class="ach__title">Первые места</span><span class="ach__desc">ML4Pay (Авито × ИТМО) и хакатон «Время IT» (ГУАП × «Звук»)</span></div>
   <div class="ach"><span class="ach__value">III ×3</span><span class="ach__title">Призовые места</span><span class="ach__desc">Хакатон Московского транспорта, КосмоХакатон 2026 и DS-хакатон ИТМО</span></div>
-  <div class="ach"><span class="ach__value">300 000 ₽</span><span class="ach__title">Призовых у команды</span><span class="ach__desc">Хакатон Московского транспорта и КосмоХакатон 2026</span></div>
-  <div class="ach"><span class="ach__value">18</span><span class="ach__title">Хакатонов</span><span class="ach__desc">Семь из них — призовые места и финалы, включая финал КосмоХакатона</span></div>
+  <div class="ach"><span class="ach__value">400 000 ₽</span><span class="ach__title">Призовых у команды</span><span class="ach__desc">Хакатон Московского транспорта, КосмоХакатон 2026 и «Время IT»</span></div>
+  <div class="ach"><span class="ach__value">19</span><span class="ach__title">Хакатонов</span><span class="ach__desc">Восемь из них — призовые места и финалы, включая финал КосмоХакатона</span></div>
 </div>
 
 ## Хакатоны { #hackathons }
@@ -30,6 +30,14 @@ hide:
 ### Призовые места и финалы { .tl-group }
 
 <div class="timeline">
+
+  <div class="tl-item tl-item--win">
+    <div class="tl-head"><span class="tl-date">13–18 окт 2026</span><span class="tl-event">Хакатон «Время IT» (ГУАП × «Звук»)</span><span class="badge badge--win">I место · 100 000 ₽</span></div>
+    <a class="tl-title" href="https://valaroma.nedovost.org">Valaróma — караоке-баттл в браузере</a>
+    <div class="tl-desc">Игрок поёт фрагмент песни в микрофон, игра отдельно оценивает мелодию и ритм и объясняет ошибки: сдвиг тональности, опоздание вступления, конкретные слоги. Голос не покидает браузер; онлайн-баттл на двоих, профили и таблица лидеров.</div>
+    <div class="tl-stack">TypeScript · React · Web Audio · FastAPI</div>
+    <a class="tl-code" href="https://github.com/Ivana-banana/Valaroma">Код на GitHub ↗</a>
+  </div>
 
   <div class="tl-item">
     <div class="tl-head"><span class="tl-date">1–2 окт 2026</span><span class="tl-event">RLT.Hack (Росэлторг)</span><span class="badge">5 место</span></div>
