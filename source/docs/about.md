@@ -17,10 +17,10 @@ hide:
 ## Достижения
 
 <div class="achievements">
-  <div class="ach"><span class="ach__value">I ×2</span><span class="ach__title">Первые места</span><span class="ach__desc">ML4Pay (Авито × ИТМО) и хакатон «Время IT» (ГУАП × «Звук»)</span></div>
-  <div class="ach"><span class="ach__value">III ×3</span><span class="ach__title">Призовые места</span><span class="ach__desc">Хакатон Московского транспорта, КосмоХакатон 2026 и DS-хакатон ИТМО</span></div>
-  <div class="ach"><span class="ach__value">400 000 ₽</span><span class="ach__title">Призовых у команды</span><span class="ach__desc">Хакатон Московского транспорта, КосмоХакатон 2026 и «Время IT»</span></div>
-  <div class="ach"><span class="ach__value">19</span><span class="ach__title">Хакатонов</span><span class="ach__desc">Восемь из них — призовые места и финалы, включая финал КосмоХакатона</span></div>
+  <div class="ach"><span class="ach__value">I ×3</span><span class="ach__title">Первые места</span><span class="ach__desc">ML4Pay (Авито × ИТМО), хакатон «Время IT» (ГУАП × «Звук») и «Открой #Моспром» (кейс ЛАССАРД)</span></div>
+  <div class="ach"><span class="ach__value">II</span><span class="ach__title">Второе место</span><span class="ach__desc">Хакатон Островка: AI-агент путешествий «О!дин запрос»</span></div>
+  <div class="ach"><span class="ach__value">III ×4</span><span class="ach__title">Третьи места</span><span class="ach__desc">Хакатон MAX, хакатон Московского транспорта, КосмоХакатон 2026 и DS-хакатон ИТМО</span></div>
+  <div class="ach"><span class="ach__value">22</span><span class="ach__title">Хакатона</span><span class="ach__desc">Одиннадцать из них — призовые места, финалы и топ-5, включая финал КосмоХакатона</span></div>
 </div>
 
 ## Хакатоны { #hackathons }
@@ -32,7 +32,23 @@ hide:
 <div class="timeline">
 
   <div class="tl-item tl-item--win">
-    <div class="tl-head"><span class="tl-date">13–18 окт 2026</span><span class="tl-event">Хакатон «Время IT» (ГУАП × «Звук»)</span><span class="badge badge--win">I место · 100 000 ₽</span></div>
+    <div class="tl-head"><span class="tl-date">23–30 окт 2026</span><span class="tl-event">Хакатон Островка</span><span class="badge badge--win">II место</span></div>
+    <a class="tl-title" href="https://github.com/Ivana-banana/Ostrovok">«О!дин запрос» — AI-агент путешествий</a>
+    <div class="tl-desc">Одно сообщение («тёплое море в ноябре, недорого, с ребёнком») превращается в готовую поездку: направления, сравнение отелей и транспорта с объяснением выбора, план со стыковками, корзина и бронь. Если условия меняются, агент пересобирает только зависимые части плана; работает и без ключа LLM.</div>
+    <div class="tl-stack">Python · FastAPI · React · Docker</div>
+    <a class="tl-code" href="https://github.com/Ivana-banana/Ostrovok">Код на GitHub ↗</a>
+  </div>
+
+  <div class="tl-item tl-item--win">
+    <div class="tl-head"><span class="tl-date">23–25 окт 2026</span><span class="tl-event">«Открой #Моспром» · кейс ЛАССАРД</span><span class="badge badge--win">I место</span></div>
+    <a class="tl-title" href="https://nedovost.org/projects/lassard-showroom">Шоурум ЛАССАРД</a>
+    <div class="tl-desc">Концепция шоурума лазерного производителя полного цикла: зал 626 м², 13 зон, шесть маршрутов для разных аудиторий и смета в пределах бюджета. К ней — работающий продукт: гид по маршруту на телефоне гостя, экраны зон и 3D-планировщик зала с публикацией проверенных версий.</div>
+    <div class="tl-stack">React · three.js · FastAPI · PostgreSQL · Blender</div>
+    <a class="tl-code" href="https://github.com/Ivana-banana/Lassard">Код на GitHub ↗</a>
+  </div>
+
+  <div class="tl-item tl-item--win">
+    <div class="tl-head"><span class="tl-date">13–18 окт 2026</span><span class="tl-event">Хакатон «Время IT» (ГУАП × «Звук»)</span><span class="badge badge--win">I место</span></div>
     <a class="tl-title" href="https://valaroma.nedovost.org">Valaróma — караоке-баттл в браузере</a>
     <div class="tl-desc">Игрок поёт фрагмент песни в микрофон, игра отдельно оценивает мелодию и ритм и объясняет ошибки: сдвиг тональности, опоздание вступления, конкретные слоги. Голос не покидает браузер; онлайн-баттл на двоих, профили и таблица лидеров.</div>
     <div class="tl-stack">TypeScript · React · Web Audio · FastAPI</div>
@@ -48,7 +64,7 @@ hide:
   </div>
 
   <div class="tl-item tl-item--win">
-    <div class="tl-head"><span class="tl-date">25–27 сен 2026</span><span class="tl-event">Хакатон Московского транспорта</span><span class="badge badge--win">III место · 200 000 ₽</span></div>
+    <div class="tl-head"><span class="tl-date">25–27 сен 2026</span><span class="tl-event">Хакатон Московского транспорта</span><span class="badge badge--win">III место</span></div>
     <a class="tl-title" href="https://nedovost.org/projects/tram-odometry">Трамвай без GNSS</a>
     <div class="tl-desc">Резервная одометрия беспилотного трамвая по датчикам вагона: фильтр Калмана с моделью привода и детектором проскальзывания.</div>
     <div class="tl-stack">ROS 2 · Python · C++</div>
@@ -64,11 +80,19 @@ hide:
   </div>
 
   <div class="tl-item tl-item--win">
-    <div class="tl-head"><span class="tl-date">18–19 сен 2026</span><span class="tl-event">КосмоХакатон 2026</span><span class="badge badge--win">III место · 100 000 ₽</span></div>
+    <div class="tl-head"><span class="tl-date">18–19 сен 2026</span><span class="tl-event">КосмоХакатон 2026</span><span class="badge badge--win">III место</span></div>
     <a class="tl-title" href="https://nedovost.org/projects/fuel-contour-2035">Топливный космоконтур 2035</a>
     <div class="tl-desc">Пульт оператора орбитального топливного узла: помесячная модель материального баланса и MILP-оптимизатор плана.</div>
     <div class="tl-stack">Python · MILP · HiGHS</div>
     <a class="tl-code" href="https://github.com/Ivana-banana/kosmo">Код на GitHub ↗</a>
+  </div>
+
+  <div class="tl-item tl-item--win">
+    <div class="tl-head"><span class="tl-date">15–25 сен 2026</span><span class="tl-event">Хакатон MAX</span><span class="badge badge--win">III место</span></div>
+    <a class="tl-title" href="https://nedovost.org/projects/max-first-90-days">Первые 90 дней иностранного студента</a>
+    <div class="tl-desc">Бот и мини-приложение в MAX строят иностранному первокурснику личный план обязательных процедур — медосвидетельствование, дактилоскопия — по дате въезда, ведут чек-лист документов и присылают напоминания о сроках.</div>
+    <div class="tl-stack">TypeScript · Node.js · PostgreSQL · Docker</div>
+    <a class="tl-code" href="https://github.com/Ivana-banana/MAX">Код на GitHub ↗</a>
   </div>
 
   <div class="tl-item">
@@ -102,11 +126,11 @@ hide:
 <div class="timeline">
 
   <div class="tl-item">
-    <div class="tl-head"><span class="tl-date">15–25 сен 2026</span><span class="tl-event">Хакатон MAX</span><span class="badge">Итоги не объявлены</span></div>
-    <a class="tl-title" href="https://nedovost.org/projects/max-first-90-days">Первые 90 дней иностранного студента</a>
-    <div class="tl-desc">Бот и мини-приложение в MAX, которые ведут иностранного первокурсника через обязательные сроки и присылают напоминания.</div>
-    <div class="tl-stack">Node.js · TypeScript · PostgreSQL</div>
-    <a class="tl-code" href="https://github.com/Ivana-banana/MAX">Код на GitHub ↗</a>
+    <div class="tl-head"><span class="tl-date">16–19 окт 2026</span><span class="tl-event">Хакатон «Точка сборки» (кейс АЦР × GigaCowork)</span><span class="badge">Участие</span></div>
+    <a class="tl-title" href="https://github.com/Ivana-banana/Tochka-Sborki">ИИ-агент для образовательных программ</a>
+    <div class="tl-desc">По запросу методиста агент собирает программу по любому ИТ-направлению и объёму часов в шаблоне АЦР: карта компетенций, учебный план, тесты, задания для семинаров, планы и слайды лекций. Правила перепроверяют часы и цифры LLM, экспорт — в .docx, .pptx и календарный план.</div>
+    <div class="tl-stack">Python · FastAPI · LLM (Cloud.ru)</div>
+    <a class="tl-code" href="https://github.com/Ivana-banana/Tochka-Sborki">Код на GitHub ↗</a>
   </div>
 
   <div class="tl-item">
